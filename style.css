@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4a69bd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #3b55a0;
+}
+
+a {
+    color: #4a69bd;
+    text-decoration: none;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(6, 6, 6);
+}
+
+.header img {
+    width: 60px;
+}
+
+.header h1 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+/* CARD / KOTAK UTAMA */
+.card {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* SOAL */
+.soal {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f7f9fc;
+    border-radius: 6px;
+}
+
+/* NAV LINK */
+.nav {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nav a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #4a69bd;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3b55a0;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* TOMBOL GLOBAL */
+.btn {
+    display: inline-block;
+    padding: 6px 10px; /* 🔥 lebih kecil */
+    background: #4a69bd;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px; /* 🔥 lebih kecil */
+    margin: 3px 4px 3px 0; /* 🔥 biar sejajar & rapat */
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #3b55a0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+th {
+    background: #4a69bd;
+    color: white;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
