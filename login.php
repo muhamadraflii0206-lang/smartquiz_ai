@@ -18,9 +18,22 @@ if (isset($_POST['login'])) {
         $_SESSION['user_id'] = $data['id'];
         $_SESSION['username'] = $data['username'];
 
-        header("Location: dashboard.php");
+        echo "
+        <script>
+        alert('Login berhasil!');
+        window.location='dashboard.php';
+        </script>
+        ";
+
+        exit;
+
     } else {
-        echo "Login gagal!";
+
+        echo "
+        <script>
+        alert('Username atau password salah!');
+        </script>
+        ";
     }
 }
 ?>
@@ -60,6 +73,7 @@ Belum punya akun? <a href="register.php">Daftar</a>
 <script>
 function togglePassword() {
     var x = document.getElementById("password");
+
     if (x.type === "password") {
         x.type = "text";
     } else {
