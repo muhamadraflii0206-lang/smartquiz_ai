@@ -10,14 +10,23 @@ if (isset($_POST['daftar'])) {
     mysqli_query($conn, "INSERT INTO users (username, password, role)
     VALUES ('$u','$p','$r')");
 
-    echo "Akun berhasil dibuat!";
+    echo "
+    <script>
+    alert('Akun berhasil dibuat!');
+    window.location='login.php';
+    </script>
+    ";
+
+    exit;
 }
 ?>
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-
+<div style="text-align:center; margin-bottom:15px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" width="80">
+    <h2>Smart Quiz AI</h2>
+</div>
 
 <h2>Register</h2>
 
@@ -37,10 +46,12 @@ if (isset($_POST['daftar'])) {
 </div>
 
 <label>Role</label>
+
 <select name="role" required>
     <option value="dosen">Dosen</option>
     <option value="mahasiswa">Mahasiswa</option>
 </select>
+
 <br><br>
 
 <button name="daftar">Daftar</button>
@@ -53,7 +64,9 @@ Sudah punya akun? <a href="login.php">Login</a>
 
 <script>
 function togglePassword() {
+
     var x = document.getElementById("password");
+
     if (x.type === "password") {
         x.type = "text";
     } else {
