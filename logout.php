@@ -2,5 +2,14 @@
 
 session_start();
 session_destroy();
-header("Location: login.php");
+
+echo "
+<script>
+alert('Logout berhasil!');
+window.location='login.php';
+</script>
+";
+
+exit;
+
 ?>
